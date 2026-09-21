@@ -1,1 +1,241 @@
+/* ========================================
+   MoFox Care Manual
+   Base Style
+======================================== */
 
+:root {
+  --cream: #f7f2e9;
+  --cream-light: #fffdf8;
+  --wine: #743b3f;
+  --wine-dark: #563034;
+  --ink: #272321;
+  --muted: #756d66;
+  --line: #d9cec0;
+  --gold: #a8874f;
+  --black: #24201f;
+
+  --serif: Georgia, "Noto Serif TC", serif;
+  --sans: "Noto Sans TC", system-ui, -apple-system, sans-serif;
+}
+
+
+/* ---------- Basic reset ---------- */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--sans);
+  line-height: 1.7;
+}
+
+
+/* ---------- Typography ---------- */
+
+h1,
+h2,
+h3 {
+  font-family: var(--serif);
+  font-weight: 600;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  font: inherit;
+}
+
+
+/* ---------- Main layout ---------- */
+
+.page {
+  min-height: 100vh;
+  padding: 64px 24px;
+}
+
+.container {
+  width: min(920px, 100%);
+  margin: 0 auto;
+}
+
+
+/* ---------- Intro ---------- */
+
+.intro {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    radial-gradient(
+      circle at top,
+      #3a3230 0%,
+      var(--black) 45%,
+      #191716 100%
+    );
+
+  color: #f4eee6;
+}
+
+.intro-card {
+  width: min(720px, 100%);
+}
+
+.system-label {
+  margin-bottom: 28px;
+
+  color: #b9ada4;
+
+  font-family: monospace;
+  font-size: 0.8rem;
+
+  letter-spacing: 0.12em;
+}
+
+.terminal-line {
+  margin: 8px 0;
+
+  color: #c9c0b9;
+
+  font-family: monospace;
+  font-size: 0.95rem;
+}
+
+.specimen-found {
+  margin-top: 38px;
+}
+
+.specimen-found h1 {
+  margin: 4px 0;
+
+  color: #ffffff;
+
+  font-size: clamp(3rem, 9vw, 5.5rem);
+  line-height: 1;
+}
+
+.specimen-number {
+  color: #cbbdb4;
+  font-family: monospace;
+}
+
+
+/* ---------- Warning ---------- */
+
+.warning {
+  margin-top: 32px;
+  padding: 16px 18px;
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  color: #eee7df;
+}
+
+.warning strong {
+  color: #ffffff;
+}
+
+
+/* ---------- Buttons ---------- */
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  margin-top: 30px;
+}
+
+.btn {
+  min-height: 48px;
+  padding: 11px 20px;
+
+  border-radius: 12px;
+
+  border: 1px solid transparent;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.15s ease,
+    background 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: var(--wine);
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: var(--wine-dark);
+}
+
+.btn-secondary {
+  border-color: rgba(255, 255, 255, 0.25);
+
+  background: transparent;
+  color: #f4eee6;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+
+/* ---------- Fox interaction ---------- */
+
+.fox-response {
+  min-height: 34px;
+  margin-top: 24px;
+
+  color: #f1e9df;
+
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  font-style: italic;
+}
+
+
+/* ---------- Utility ---------- */
+
+.hidden {
+  display: none;
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 600px) {
+
+  .page {
+    padding: 42px 20px;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+}
