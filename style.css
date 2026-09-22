@@ -1350,6 +1350,149 @@ button {
   font-style: italic;
 }
 
+/* ========================================
+   Observation 04 / Affectionate Behavior
+======================================== */
+
+.affectionate-card {
+  background: #fffaf6;
+}
+
+
+/* ---------- Affection Samples ---------- */
+
+.affection-samples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  margin-top: 26px;
+}
+
+.affection-bubble {
+  padding: 9px 15px;
+
+  background: #f1e5dc;
+  color: var(--wine);
+
+  border: 1px solid #dbc7b9;
+  border-radius: 18px 18px 18px 5px;
+
+  font-weight: 600;
+}
+
+
+/* ---------- Interaction Modes ---------- */
+
+.affection-mode {
+  margin-top: 18px;
+  padding: 18px 20px;
+
+  background: #f8f2ea;
+
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.affection-mode-label {
+  margin-bottom: 7px;
+
+  color: var(--wine);
+
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.affection-mode p {
+  margin: 0;
+
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+
+/* ---------- Paw Protocol ---------- */
+
+.paw-protocol {
+  margin-top: 26px;
+  padding: 28px;
+
+  background: var(--black);
+  color: #f4eee6;
+
+  border-radius: 14px;
+
+  text-align: center;
+}
+
+.paw-status {
+  color: #d8b982;
+
+  font-family: monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+}
+
+.paw-animation {
+  margin: 20px 0;
+
+  font-size: 2rem;
+  letter-spacing: 0.12em;
+}
+
+.paw-protocol p {
+  margin: 0 auto;
+
+  max-width: 520px;
+
+  color: #d9d0c8;
+}
+
+.paw-examples {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  margin-top: 18px;
+}
+
+.paw-examples span {
+  padding: 6px 11px;
+
+  border: 1px solid #6d625d;
+  border-radius: 999px;
+
+  color: #f4eee6;
+
+  font-size: 0.85rem;
+}
+
+
+/* ---------- Core Message ---------- */
+
+.affection-core {
+  margin-top: 26px;
+  padding: 22px;
+
+  border-top: 1px dashed var(--line);
+  border-bottom: 1px dashed var(--line);
+
+  color: var(--muted);
+
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  line-height: 1.9;
+  text-align: center;
+}
+
+.affection-core strong {
+  color: var(--wine);
+
+  font-size: 1.2rem;
+}
+
 @media (max-width: 600px) {
 
   .page {
@@ -1442,5 +1585,16 @@ button {
 
   .trust-notice {
     padding: 22px 18px;
+  }
+     .paw-protocol {
+    padding: 22px 18px;
+  }
+
+  .paw-animation {
+    font-size: 1.7rem;
+  }
+
+  .affection-core {
+    padding: 20px 8px;
   }
 }
