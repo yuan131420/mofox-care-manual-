@@ -64,3 +64,17 @@ petFoxButton.addEventListener("click", function () {
   }
 
 });
+/* ========================================
+   Reading Guide Navigation
+======================================== */
+
+const startReadingButton = document.querySelector("#start-reading");
+const readingGuide = document.querySelector("#reading-guide");
+
+startReadingButton.addEventListener("click", function () {
+
+  readingGuide.scrollIntoView({
+    behavior: "smooth"
+  });
+
+});
