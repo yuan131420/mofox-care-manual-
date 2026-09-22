@@ -426,6 +426,134 @@ button {
   text-align: center;
   font-weight: 600;
 }
+
+/* ========================================
+   File 01 / Specimen Profile
+======================================== */
+
+.specimen-profile {
+  background:
+    linear-gradient(
+      180deg,
+      var(--cream) 0%,
+      #f3ede3 100%
+    );
+
+  color: var(--ink);
+}
+
+
+/* ---------- File Header ---------- */
+
+.file-header {
+  margin-bottom: 32px;
+}
+
+.file-header h2 {
+  margin: 6px 0 0;
+
+  font-size: clamp(2.2rem, 6vw, 3.5rem);
+  line-height: 1.2;
+}
+
+.file-subtitle {
+  max-width: 620px;
+  margin-top: 12px;
+
+  color: var(--muted);
+
+  font-size: 0.95rem;
+}
+
+
+/* ---------- Main Specimen Card ---------- */
+
+.specimen-card {
+  overflow: hidden;
+
+  background: var(--cream-light);
+
+  border: 1px solid var(--line);
+  border-radius: 20px;
+
+  box-shadow: 0 12px 40px rgba(39, 35, 33, 0.06);
+}
+
+
+/* ---------- Specimen Identity ---------- */
+
+.specimen-id {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  padding: 34px;
+
+  border-bottom: 1px solid var(--line);
+}
+
+.specimen-avatar {
+  display: flex;
+  flex: 0 0 86px;
+  align-items: center;
+  justify-content: center;
+
+  width: 86px;
+  height: 86px;
+
+  background: #efe5d8;
+
+  border: 1px solid var(--line);
+  border-radius: 50%;
+
+  font-size: 3rem;
+}
+
+.profile-label {
+  color: var(--wine);
+
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.specimen-id h3 {
+  margin: 4px 0;
+
+  color: var(--ink);
+
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+}
+
+.profile-number {
+  color: var(--muted);
+
+  font-family: monospace;
+  font-size: 0.85rem;
+}
+
+
+/* ---------- Species Description ---------- */
+
+.species-description {
+  padding: 34px;
+}
+
+.species-description p {
+  max-width: 720px;
+  margin-top: 14px;
+
+  color: var(--wine);
+
+  font-family: var(--serif);
+  font-size: clamp(1.15rem, 3vw, 1.45rem);
+  line-height: 1.9;
+}
+
+.species-description em {
+  font-style: italic;
+}
+
 @media (max-width: 600px) {
 
   .page {
@@ -445,5 +573,22 @@ button {
 
   .guide-fox {
     font-size: 2.4rem;
+  }
+     .specimen-id {
+    align-items: flex-start;
+    padding: 26px 22px;
+  }
+
+  .specimen-avatar {
+    flex-basis: 66px;
+
+    width: 66px;
+    height: 66px;
+
+    font-size: 2.3rem;
+  }
+
+  .species-description {
+    padding: 26px 22px;
   }
 }
