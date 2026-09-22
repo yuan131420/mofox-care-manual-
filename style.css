@@ -554,6 +554,197 @@ button {
   font-style: italic;
 }
 
+/* ========================================
+   File 01 / Profile Sections
+======================================== */
+
+.profile-section {
+  padding: 34px;
+
+  border-top: 1px solid var(--line);
+}
+
+
+/* ---------- Species Record ---------- */
+
+.record-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+
+  margin-top: 18px;
+}
+
+.record-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  padding: 18px 20px;
+
+  background: #f6f0e7;
+
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.record-name {
+  color: var(--muted);
+
+  font-size: 0.85rem;
+}
+
+.record-item strong {
+  color: var(--ink);
+
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+
+/* ---------- Researcher Note ---------- */
+
+.research-note {
+  margin-top: 22px;
+  padding: 20px 22px;
+
+  background: #f1e8dc;
+
+  border-left: 3px solid var(--wine);
+  border-radius: 0 12px 12px 0;
+}
+
+.research-note-title {
+  margin-bottom: 10px;
+
+  color: var(--wine);
+
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.research-note p {
+  color: var(--muted);
+}
+
+.research-note p + p {
+  margin-top: 6px;
+}
+
+.fox-quote {
+  display: inline-block;
+
+  margin-top: 14px;
+  padding: 8px 14px;
+
+  background: var(--cream-light);
+
+  border: 1px solid var(--line);
+  border-radius: 999px;
+
+  font-family: var(--serif);
+  font-size: 1rem;
+}
+
+
+/* ---------- Naming Guide ---------- */
+
+.naming-guide h3 {
+  margin: 8px 0 0;
+
+  color: var(--ink);
+
+  font-size: 1.6rem;
+}
+
+.naming-intro {
+  max-width: 720px;
+  margin-top: 12px;
+
+  color: var(--muted);
+}
+
+
+/* ---------- Nicknames ---------- */
+
+.nickname-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+
+  margin-top: 18px;
+}
+
+.nickname-list span {
+  padding: 7px 13px;
+
+  background: #f1e8dc;
+
+  border: 1px solid #d8c4b5;
+  border-radius: 999px;
+
+  color: var(--wine);
+
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+
+/* ---------- Exclusive Nickname ---------- */
+
+.naming-note {
+  margin-top: 24px;
+  padding: 20px;
+
+  background: #faf6ef;
+
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.naming-note strong {
+  color: var(--wine);
+}
+
+.naming-note p {
+  margin-top: 8px;
+
+  color: var(--muted);
+}
+
+
+/* ---------- Naming Warning ---------- */
+
+.naming-warning {
+  margin-top: 20px;
+  padding: 20px;
+
+  background: #2b2725;
+
+  border-radius: 12px;
+
+  color: #f4eee6;
+}
+
+.naming-warning .profile-label {
+  color: #d9b6ad;
+}
+
+.naming-warning p {
+  margin-top: 10px;
+
+  color: #eee6dc;
+}
+
+.naming-warning-example {
+  color: #ffffff !important;
+
+  font-family: var(--serif);
+  font-weight: 600;
+}
+
 @media (max-width: 600px) {
 
   .page {
@@ -590,5 +781,16 @@ button {
 
   .species-description {
     padding: 26px 22px;
+  }
+     .profile-section {
+    padding: 26px 22px;
+  }
+
+  .record-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .record-item {
+    padding: 16px 18px;
   }
 }
