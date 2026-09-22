@@ -906,6 +906,99 @@ button {
   font-family: var(--serif);
   font-size: 1rem;
 }
+
+/* ========================================
+   Danger Level
+======================================== */
+
+.danger-level {
+  background: #faf6ef;
+}
+
+.danger-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.danger-header h3 {
+  margin: 8px 0 0;
+
+  color: var(--ink);
+
+  font-size: 1.6rem;
+}
+
+.danger-stars {
+  flex-shrink: 0;
+
+  color: var(--wine);
+
+  font-size: 1.5rem;
+  letter-spacing: 0.08em;
+}
+
+.danger-description {
+  max-width: 720px;
+  margin-top: 18px;
+
+  color: var(--muted);
+
+  line-height: 1.9;
+}
+
+
+/* ---------- Warning ---------- */
+
+.danger-warning {
+  display: flex;
+  gap: 16px;
+
+  margin-top: 24px;
+  padding: 20px 22px;
+
+  background: var(--black);
+  color: #f4eee6;
+
+  border-radius: 12px;
+}
+
+.danger-warning-icon {
+  flex-shrink: 0;
+
+  font-size: 1.3rem;
+}
+
+.danger-warning strong {
+  color: #ffffff;
+
+  font-size: 1rem;
+}
+
+.danger-warning p {
+  margin-top: 6px;
+
+  color: #cfc5bd;
+}
+
+
+/* ---------- Footer ---------- */
+
+.danger-footer {
+  margin-top: 18px;
+  padding-top: 18px;
+
+  border-top: 1px solid var(--line);
+
+  color: var(--wine);
+
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  font-style: italic;
+  text-align: center;
+}
+
 @media (max-width: 600px) {
 
   .page {
@@ -953,5 +1046,17 @@ button {
 
   .record-item {
     padding: 16px 18px;
+  }
+     .danger-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .danger-stars {
+    font-size: 1.3rem;
+  }
+
+  .danger-warning {
+    padding: 18px;
   }
 }
