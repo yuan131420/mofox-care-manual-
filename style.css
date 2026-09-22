@@ -232,7 +232,200 @@ button {
 
 
 /* ---------- Mobile ---------- */
+/* ========================================
+   Reading Guide
+======================================== */
 
+.reading-guide {
+  background: var(--cream);
+  color: var(--ink);
+}
+
+.guide-card {
+  padding: 48px;
+
+  background: var(--cream-light);
+
+  border: 1px solid var(--line);
+  border-radius: 20px;
+
+  box-shadow: 0 12px 40px rgba(39, 35, 33, 0.06);
+}
+
+
+/* ---------- Heading ---------- */
+
+.section-label {
+  color: var(--wine);
+
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.guide-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+
+  margin-top: 6px;
+  margin-bottom: 20px;
+}
+
+.guide-heading h2 {
+  margin: 0;
+
+  font-size: clamp(2rem, 6vw, 3rem);
+  line-height: 1.2;
+}
+
+.guide-intro {
+  margin-top: 14px;
+
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.guide-fox {
+  font-size: 3rem;
+
+  transform: rotate(-8deg);
+}
+
+
+/* ---------- Rules ---------- */
+
+.guide-rule {
+  display: flex;
+  gap: 20px;
+
+  padding: 26px 0;
+
+  border-bottom: 1px solid var(--line);
+}
+
+.rule-number {
+  display: flex;
+  flex: 0 0 40px;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  border: 1px solid var(--wine);
+  border-radius: 50%;
+
+  color: var(--wine);
+
+  font-family: var(--serif);
+  font-weight: 700;
+}
+
+.rule-content h3 {
+  margin: 0;
+
+  color: var(--wine);
+
+  font-size: 1.25rem;
+}
+
+.rule-content p {
+  margin-top: 8px;
+
+  color: var(--muted);
+}
+
+.rule-content strong {
+  display: block;
+
+  margin-top: 8px;
+
+  font-size: 0.9rem;
+}
+
+
+/* ---------- Priority Protocol ---------- */
+
+.priority-protocol {
+  margin-top: 32px;
+  padding: 30px 24px;
+
+  border-radius: 16px;
+
+  background: var(--black);
+  color: #eee6dc;
+
+  text-align: center;
+}
+
+.protocol-label {
+  color: #aaa09a;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+.protocol-text {
+  margin-top: 12px;
+
+  color: #ffffff;
+
+  font-family: var(--serif);
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  font-weight: 700;
+}
+
+.protocol-fox {
+  margin-top: 12px;
+
+  font-size: 2.5rem;
+}
+
+
+/* ---------- Footer ---------- */
+
+.guide-footer {
+  margin-top: 28px;
+
+  color: var(--muted);
+
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.guide-footer p + p {
+  margin-top: 4px;
+}
+
+
+/* ---------- Confirm Button ---------- */
+
+.guide-confirm {
+  display: block;
+
+  width: 100%;
+  margin-top: 24px;
+
+  background: var(--wine);
+  color: #ffffff;
+}
+
+.guide-confirm:hover {
+  background: var(--wine-dark);
+}
+
+.guide-confirm-response {
+  min-height: 28px;
+  margin-top: 14px;
+
+  color: var(--wine);
+
+  text-align: center;
+  font-weight: 600;
+}
 @media (max-width: 600px) {
 
   .page {
@@ -246,5 +439,11 @@ button {
   .btn {
     width: 100%;
   }
+  .guide-card {
+    padding: 28px 22px;
+  }
 
+  .guide-fox {
+    font-size: 2.4rem;
+  }
 }
