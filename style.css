@@ -1228,6 +1228,128 @@ button {
   font-size: 0.85rem;
 }
 
+/* ========================================
+   Observation 03 / Trust Behavior
+======================================== */
+
+.trust-card {
+  background: #fffaf4;
+}
+
+
+/* ---------- Trust Signals ---------- */
+
+.trust-signals {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+
+  margin-top: 28px;
+}
+
+.trust-signal {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 16px 18px;
+
+  background: #f6eee5;
+
+  border: 1px solid var(--line);
+  border-radius: 12px;
+
+  color: var(--ink);
+}
+
+.trust-icon {
+  flex-shrink: 0;
+
+  font-size: 1.2rem;
+}
+
+
+/* ---------- Research Interpretation ---------- */
+
+.trust-quote {
+  margin-top: 28px;
+  padding: 24px 26px;
+
+  background: #f2e8dc;
+
+  border-left: 4px solid var(--wine);
+  border-radius: 0 12px 12px 0;
+}
+
+.trust-quote-label {
+  margin-bottom: 10px;
+
+  color: var(--wine);
+
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.trust-quote p {
+  margin: 0;
+
+  color: var(--ink);
+
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  font-style: italic;
+  line-height: 1.9;
+}
+
+
+/* ---------- Trust Access ---------- */
+
+.trust-notice {
+  margin-top: 26px;
+  padding: 26px;
+
+  background: var(--black);
+  color: #f4eee6;
+
+  border-radius: 14px;
+
+  text-align: center;
+}
+
+.trust-notice-status {
+  margin-bottom: 14px;
+
+  color: #d8b982;
+
+  font-family: monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+}
+
+.trust-notice p {
+  margin: 0;
+
+  color: #f4eee6;
+
+  font-size: 1.05rem;
+}
+
+.trust-notice strong {
+  color: #ffffff;
+
+  font-size: 1.15rem;
+}
+
+.trust-notice-footer {
+  margin-top: 14px;
+
+  color: #d8b982;
+
+  font-family: var(--serif);
+  font-style: italic;
+}
+
 @media (max-width: 600px) {
 
   .page {
@@ -1309,5 +1431,16 @@ button {
 
   .approach-panel {
     padding: 18px;
+  }
+     .trust-signals {
+    grid-template-columns: 1fr;
+  }
+
+  .trust-quote {
+    padding: 20px;
+  }
+
+  .trust-notice {
+    padding: 22px 18px;
   }
 }
