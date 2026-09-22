@@ -1023,7 +1023,9 @@ button {
 
   box-shadow: 0 12px 40px rgba(39, 35, 33, 0.06);
 }
-
+.behavior-card + .behavior-card {
+  margin-top: 24px;
+}
 .behavior-number {
   display: inline-block;
 
@@ -1150,6 +1152,82 @@ button {
   color: #cfc5bd;
 }
 
+/* ========================================
+   Observation 02 / Approaching MoFox
+======================================== */
+
+.approach-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+
+  margin-top: 28px;
+}
+
+.approach-panel {
+  padding: 22px;
+
+  background: #f7f1e8;
+
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+.approach-title {
+  margin-bottom: 14px;
+
+  color: var(--wine);
+
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+
+/* ---------- Comfortable Signals ---------- */
+
+.approach-panel ul {
+  margin: 0;
+  padding-left: 20px;
+
+  color: var(--muted);
+}
+
+.approach-panel li {
+  padding: 4px 0;
+}
+
+.approach-panel li::marker {
+  color: var(--wine);
+}
+
+
+/* ---------- Intent Detection ---------- */
+
+.intent-panel {
+  background: #f1e8dc;
+}
+
+.intent-panel p {
+  color: var(--muted);
+}
+
+.intent-panel p + p {
+  margin-top: 10px;
+}
+
+.intent-status {
+  margin-top: 18px;
+  padding-top: 14px;
+
+  border-top: 1px dashed #cdbdad;
+
+  color: var(--wine);
+
+  font-family: monospace;
+  font-size: 0.85rem;
+}
+
 @media (max-width: 600px) {
 
   .page {
@@ -1224,5 +1302,12 @@ button {
 
   .field-note {
     padding: 16px;
+  }
+     .approach-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .approach-panel {
+    padding: 18px;
   }
 }
