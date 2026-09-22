@@ -100,3 +100,50 @@ guideConfirmButton.addEventListener("click", function () {
 
 });
 });
+/* ========================================
+   Chili Experiment
+======================================== */
+
+const chiliButton = document.querySelector("#chili-button");
+const chiliResponse = document.querySelector("#chili-response");
+
+let chiliCount = 0;
+
+chiliButton.addEventListener("click", function () {
+
+  chiliCount += 1;
+
+  // 第一次
+  if (chiliCount === 1) {
+
+    chiliResponse.innerHTML = `
+      🦊「拿走。」
+    `;
+
+  }
+
+  // 第二次
+  else if (chiliCount === 2) {
+
+    chiliResponse.innerHTML = `
+      🦊「我說拿走。」
+    `;
+
+  }
+
+  // 第三次
+  else if (chiliCount === 3) {
+
+    chiliResponse.innerHTML = `
+      🦊「……」<br>
+      <span class="affection-change">
+        MoFox is angry.
+      </span>
+    `;
+
+    chiliButton.textContent = "🌶️ 已被研究員沒收";
+    chiliButton.disabled = true;
+
+  }
+
+});
