@@ -77,4 +77,26 @@ startReadingButton.addEventListener("click", function () {
     behavior: "smooth"
   });
 
+   /* ========================================
+   Reading Guide → File 01
+======================================== */
+
+const guideConfirmButton = document.querySelector("#guide-confirm");
+const guideConfirmResponse = document.querySelector("#guide-confirm-response");
+const file01 = document.querySelector("#file-01");
+
+guideConfirmButton.addEventListener("click", function () {
+
+  guideConfirmResponse.textContent =
+    "Protocol acknowledged. 🦊　File 01 已開放。";
+
+  setTimeout(function () {
+
+    file01.scrollIntoView({
+      behavior: "smooth"
+    });
+
+  }, 500);
+
+});
 });
