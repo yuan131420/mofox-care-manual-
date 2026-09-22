@@ -1493,6 +1493,233 @@ button {
   font-size: 1.2rem;
 }
 
+/* ========================================
+   Observation 05 / Low Battery
+======================================== */
+
+.low-battery-card {
+  background: #faf8f4;
+}
+
+
+/* ---------- Battery Status ---------- */
+
+.battery-status {
+  margin-top: 28px;
+  padding: 22px;
+
+  background: #f3eee7;
+
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+.battery-status-top {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 12px;
+
+  color: var(--wine);
+
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.battery-track {
+  height: 10px;
+
+  overflow: hidden;
+
+  background: #ded5cc;
+
+  border-radius: 999px;
+}
+
+.battery-fill {
+  width: 14%;
+  height: 100%;
+
+  background: var(--wine);
+
+  border-radius: inherit;
+}
+
+.battery-system {
+  margin-top: 12px;
+
+  color: var(--muted);
+
+  font-family: monospace;
+  font-size: 0.82rem;
+}
+
+
+/* ---------- Low Battery Information ---------- */
+
+.low-battery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+
+  margin-top: 20px;
+}
+
+.low-battery-panel {
+  padding: 22px;
+
+  background: #f7f1e9;
+
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+.low-battery-label {
+  margin-bottom: 14px;
+
+  color: var(--wine);
+
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.low-battery-panel ul {
+  margin: 0;
+  padding-left: 20px;
+
+  color: var(--muted);
+}
+
+.low-battery-panel li {
+  padding: 4px 0;
+}
+
+.no-reply-message {
+  margin-bottom: 14px;
+
+  color: var(--ink);
+
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.low-battery-panel p {
+  margin: 0;
+
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+
+/* ---------- Cave Note ---------- */
+
+.cave-note {
+  display: flex;
+  gap: 16px;
+
+  margin-top: 22px;
+  padding: 20px 22px;
+
+  background: #eee4d8;
+
+  border-radius: 12px;
+}
+
+.cave-icon {
+  flex-shrink: 0;
+
+  font-size: 1.4rem;
+}
+
+.cave-note strong {
+  color: var(--ink);
+}
+
+.cave-note p {
+  margin-top: 5px;
+
+  color: var(--muted);
+}
+
+
+/* ---------- Please Do Not ---------- */
+
+.low-battery-warning {
+  margin-top: 22px;
+  padding: 22px;
+
+  border: 1px dashed #bca99b;
+  border-radius: 12px;
+}
+
+.low-battery-warning-label {
+  margin-bottom: 10px;
+
+  color: var(--wine);
+
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.low-battery-warning p {
+  color: var(--muted);
+}
+
+.low-battery-small {
+  margin-top: 10px;
+
+  font-size: 0.88rem;
+  font-style: italic;
+}
+
+
+/* ---------- Cave Ending ---------- */
+
+.low-battery-core {
+  margin-top: 26px;
+  padding: 30px 26px;
+
+  background: var(--black);
+  color: #f4eee6;
+
+  border-radius: 14px;
+
+  text-align: center;
+}
+
+.low-battery-core p {
+  margin: 0;
+
+  color: #e8dfd7;
+
+  font-family: var(--serif);
+  font-size: 1.08rem;
+  line-height: 1.9;
+}
+
+.low-battery-core strong {
+  color: #ffffff;
+
+  font-size: 1.2rem;
+}
+
+.low-battery-divider {
+  width: 48px;
+  height: 1px;
+
+  margin: 20px auto;
+
+  background: #756a64;
+}
+
+.low-battery-core .cave-ending {
+  color: #cfc5bd;
+
+  font-size: 0.98rem;
+}
+
 @media (max-width: 600px) {
 
   .page {
@@ -1596,5 +1823,21 @@ button {
 
   .affection-core {
     padding: 20px 8px;
+  }
+     .low-battery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .battery-status,
+  .low-battery-panel {
+    padding: 18px;
+  }
+
+  .cave-note {
+    padding: 18px;
+  }
+
+  .low-battery-core {
+    padding: 26px 18px;
   }
 }
