@@ -2140,6 +2140,214 @@ button {
   font-size: 1.2rem;
 }
 
+/* ========================================
+   Observation 08 / Repair Behavior
+======================================== */
+
+.repair-card {
+  background: #fffaf5;
+}
+
+
+/* ---------- Repair Principle ---------- */
+
+.repair-principle {
+  margin-top: 28px;
+  padding: 22px;
+
+  background: #f6efe6;
+
+  border-left: 4px solid var(--wine);
+  border-radius: 0 12px 12px 0;
+}
+
+.repair-principle-label {
+  margin-bottom: 10px;
+
+  color: var(--wine);
+
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.repair-principle p {
+  margin: 0;
+
+  color: var(--muted);
+  line-height: 1.85;
+}
+
+
+/* ---------- Repair Sequence ---------- */
+
+.repair-sequence {
+  margin-top: 24px;
+}
+
+.repair-sequence-label {
+  margin-bottom: 16px;
+
+  color: var(--wine);
+
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.repair-step {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 16px;
+
+  padding: 18px 0;
+
+  border-bottom: 1px solid var(--line);
+}
+
+.repair-step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 42px;
+  height: 42px;
+
+  background: #eee2d5;
+  color: var(--wine);
+
+  border-radius: 50%;
+
+  font-family: var(--serif);
+  font-weight: 700;
+}
+
+.repair-step strong {
+  color: var(--ink);
+}
+
+.repair-step p {
+  margin: 5px 0 0;
+
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+
+/* ---------- Repair System ---------- */
+
+.repair-system {
+  margin-top: 28px;
+  padding: 26px;
+
+  background: var(--black);
+  color: #f4eee6;
+
+  border-radius: 14px;
+}
+
+.repair-system-title {
+  margin-bottom: 18px;
+
+  color: #d8b982;
+
+  font-family: monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+}
+
+.repair-check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 11px 0;
+
+  border-bottom: 1px solid #514a46;
+
+  color: #d9d0c8;
+
+  font-family: monospace;
+  font-size: 0.9rem;
+}
+
+.repair-check span:last-child {
+  color: #d8b982;
+
+  font-weight: 700;
+}
+
+.repair-hug {
+  margin-top: 10px;
+  padding: 16px;
+
+  background: #3a3330;
+
+  border: 1px solid #695d56;
+  border-radius: 10px;
+
+  color: #ffffff;
+}
+
+.repair-hug span:last-child {
+  font-size: 1.2rem;
+}
+
+
+/* ---------- Important Note ---------- */
+
+.repair-warning {
+  margin-top: 22px;
+  padding: 20px 22px;
+
+  background: #eee4d8;
+
+  border-radius: 12px;
+}
+
+.repair-warning strong {
+  color: var(--wine);
+}
+
+.repair-warning p {
+  margin: 7px 0 0;
+
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+
+/* ---------- Core Message ---------- */
+
+.repair-core {
+  margin-top: 26px;
+  padding: 28px 24px;
+
+  border-top: 1px dashed var(--line);
+  border-bottom: 1px dashed var(--line);
+
+  text-align: center;
+}
+
+.repair-core p {
+  margin: 0;
+
+  color: var(--muted);
+}
+
+.repair-core strong {
+  display: block;
+
+  max-width: 650px;
+  margin: 10px auto 0;
+
+  color: var(--wine);
+
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
 @media (max-width: 600px) {
 
   .page {
@@ -2285,5 +2493,31 @@ button {
 
   .conflict-access {
     padding: 22px 18px;
+  }
+     .repair-principle,
+  .repair-warning {
+    padding: 18px;
+  }
+
+  .repair-step {
+    grid-template-columns: 40px 1fr;
+    gap: 12px;
+  }
+
+  .repair-step-number {
+    width: 36px;
+    height: 36px;
+  }
+
+  .repair-system {
+    padding: 22px 18px;
+  }
+
+  .repair-check {
+    font-size: 0.8rem;
+  }
+
+  .repair-core {
+    padding: 24px 8px;
   }
 }
