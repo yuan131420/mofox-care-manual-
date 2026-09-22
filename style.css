@@ -1938,6 +1938,208 @@ button {
   font-size: 0.9rem;
 }
 
+/* ========================================
+   Observation 07 / Conflict & Hurt
+======================================== */
+
+.conflict-card {
+  background: #faf7f2;
+}
+
+
+/* ---------- Possible Signs ---------- */
+
+.conflict-signs {
+  margin-top: 28px;
+  padding: 22px;
+
+  background: #f5eee6;
+
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+.conflict-signs-label {
+  margin-bottom: 14px;
+
+  color: var(--wine);
+
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.conflict-sign-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.conflict-sign {
+  padding: 12px 14px;
+
+  background: var(--cream-light);
+
+  border: 1px solid #d9cbbd;
+  border-radius: 10px;
+
+  color: var(--ink);
+}
+
+.conflict-sign-note {
+  margin: 16px 0 0;
+
+  color: var(--muted);
+
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+
+/* ---------- Communication Pattern ---------- */
+
+.conflict-communication {
+  margin-top: 22px;
+  padding: 22px;
+
+  border-left: 4px solid var(--wine);
+
+  background: #f8f2ea;
+
+  border-radius: 0 12px 12px 0;
+}
+
+.conflict-communication-label {
+  margin-bottom: 10px;
+
+  color: var(--wine);
+
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.conflict-communication p {
+  margin: 0;
+
+  color: var(--muted);
+
+  line-height: 1.85;
+}
+
+
+/* ---------- Gentle Invitation ---------- */
+
+.conflict-example {
+  margin-top: 22px;
+  padding: 22px 24px;
+
+  border: 1px dashed #c4b2a5;
+  border-radius: 12px;
+}
+
+.conflict-example-label {
+  margin-bottom: 10px;
+
+  color: var(--wine);
+
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.conflict-example p {
+  margin: 0;
+
+  color: var(--ink);
+
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  font-style: italic;
+  line-height: 1.9;
+}
+
+
+/* ---------- Access Request ---------- */
+
+.conflict-access {
+  margin-top: 26px;
+  padding: 28px;
+
+  background: var(--black);
+  color: #f4eee6;
+
+  border-radius: 14px;
+}
+
+.conflict-access-status {
+  margin-bottom: 16px;
+
+  color: #d8b982;
+
+  font-family: monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+}
+
+.conflict-access > p {
+  margin: 0;
+
+  color: #d3c9c1;
+
+  line-height: 1.8;
+}
+
+.conflict-access-core {
+  margin-top: 22px;
+  padding-top: 20px;
+
+  border-top: 1px solid #5e5550;
+
+  color: #e8dfd7;
+
+  font-family: var(--serif);
+  font-size: 1.08rem;
+  line-height: 1.9;
+  text-align: center;
+}
+
+.conflict-access-core strong {
+  color: #ffffff;
+
+  font-size: 1.2rem;
+}
+
+
+/* ---------- Privacy Protocol ---------- */
+
+.conflict-final {
+  margin-top: 20px;
+  padding: 22px;
+
+  background: #eee4d8;
+
+  border: 1px solid #d8c8ba;
+  border-radius: 12px;
+
+  text-align: center;
+}
+
+.conflict-final-label {
+  margin-bottom: 8px;
+
+  color: var(--wine);
+
+  font-family: monospace;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+}
+
+.conflict-final strong {
+  color: var(--wine);
+
+  font-family: var(--serif);
+  font-size: 1.2rem;
+}
+
 @media (max-width: 600px) {
 
   .page {
@@ -2070,5 +2272,18 @@ button {
 
   .sharing-core {
     padding: 24px 18px;
+  }
+     .conflict-sign-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .conflict-signs,
+  .conflict-communication,
+  .conflict-example {
+    padding: 18px;
+  }
+
+  .conflict-access {
+    padding: 22px 18px;
   }
 }
