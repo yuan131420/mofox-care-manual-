@@ -2348,6 +2348,177 @@ button {
   line-height: 1.8;
 }
 
+/* ========================================
+   File 02 / Field Summary
+======================================== */
+
+.field-summary {
+  margin-top: 34px;
+  padding: 36px;
+
+  background: #2b2725;
+  color: #f4eee6;
+
+  border-radius: 18px;
+
+  box-shadow: 0 14px 42px rgba(39, 35, 33, 0.12);
+}
+
+
+/* ---------- Header ---------- */
+
+.field-summary-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.field-summary .profile-label {
+  color: #d8b982;
+}
+
+.field-summary-header h3 {
+  margin: 7px 0 0;
+
+  color: #ffffff;
+
+  font-family: var(--serif);
+  font-size: 1.8rem;
+}
+
+.field-summary-status {
+  flex-shrink: 0;
+
+  padding: 7px 12px;
+
+  background: #3a3330;
+  color: #d8b982;
+
+  border: 1px solid #655a54;
+  border-radius: 999px;
+
+  font-family: monospace;
+  font-size: 0.82rem;
+}
+
+
+/* ---------- Intro ---------- */
+
+.field-summary-intro {
+  max-width: 720px;
+
+  margin-top: 24px;
+
+  color: #d6ccc4;
+
+  line-height: 1.9;
+}
+
+
+/* ---------- Findings ---------- */
+
+.field-summary-findings {
+  display: grid;
+  gap: 10px;
+
+  margin-top: 28px;
+}
+
+.summary-finding {
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  align-items: center;
+  gap: 14px;
+
+  padding: 14px 16px;
+
+  background: #342f2c;
+
+  border: 1px solid #4d4541;
+  border-radius: 10px;
+}
+
+.summary-finding span {
+  color: #d8b982;
+
+  font-family: monospace;
+  font-size: 0.8rem;
+}
+
+.summary-finding p {
+  margin: 0;
+
+  color: #f1e9e2;
+}
+
+
+/* ---------- Research Status ---------- */
+
+.field-summary-note {
+  margin-top: 28px;
+  padding: 24px;
+
+  background: #f3ece3;
+  color: var(--ink);
+
+  border-radius: 12px;
+}
+
+.field-summary-note-label {
+  margin-bottom: 12px;
+
+  color: var(--wine);
+
+  font-family: monospace;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.field-summary-note p {
+  margin: 6px 0;
+
+  color: var(--muted);
+
+  line-height: 1.8;
+}
+
+.field-summary-fox {
+  margin-top: 16px;
+
+  color: var(--wine);
+
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  font-style: italic;
+}
+
+
+/* ---------- Footer ---------- */
+
+.field-summary-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 26px;
+  padding-top: 18px;
+
+  border-top: 1px solid #514944;
+
+  font-family: monospace;
+  font-size: 0.85rem;
+}
+
+.field-summary-footer span {
+  color: #aaa099;
+}
+
+.field-summary-footer strong {
+  color: #d8b982;
+}
+
 @media (max-width: 600px) {
 
   .page {
@@ -2519,5 +2690,26 @@ button {
 
   .repair-core {
     padding: 24px 8px;
+  }
+     .field-summary {
+    padding: 26px 22px;
+  }
+
+  .field-summary-header {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .summary-finding {
+    grid-template-columns: 32px 1fr;
+  }
+
+  .field-summary-note {
+    padding: 20px;
+  }
+
+  .field-summary-footer {
+    gap: 12px;
+    font-size: 0.78rem;
   }
 }
