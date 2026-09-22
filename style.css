@@ -213,7 +213,16 @@ button {
   font-size: 1.05rem;
   font-style: italic;
 }
+.affection-change {
+  display: inline-block;
+  margin-top: 6px;
 
+  color: #c7aaa6;
+
+  font-family: monospace;
+  font-size: 0.8rem;
+  font-style: normal;
+}
 
 /* ---------- Utility ---------- */
 
