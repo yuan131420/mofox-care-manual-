@@ -1720,6 +1720,224 @@ button {
   font-size: 0.98rem;
 }
 
+/* ========================================
+   Observation 06 / Sharing Behavior
+======================================== */
+
+.sharing-card {
+  background: #fffaf5;
+}
+
+
+/* ---------- Incoming Data Stream ---------- */
+
+.sharing-stream {
+  margin-top: 28px;
+  padding: 24px;
+
+  background: #f5eee5;
+
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+.sharing-stream-label {
+  margin-bottom: 16px;
+
+  color: var(--wine);
+
+  font-family: monospace;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.sharing-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.sharing-topics span {
+  padding: 8px 13px;
+
+  background: var(--cream-light);
+  color: var(--ink);
+
+  border: 1px solid #d9cbbd;
+  border-radius: 999px;
+
+  font-size: 0.9rem;
+}
+
+
+/* ---------- Researcher Note ---------- */
+
+.sharing-research-note {
+  margin-top: 22px;
+  padding: 22px;
+
+  background: #eee5da;
+
+  border-left: 4px solid var(--wine);
+  border-radius: 0 12px 12px 0;
+}
+
+.sharing-note-label {
+  margin-bottom: 10px;
+
+  color: var(--wine);
+
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.sharing-research-note p {
+  margin: 5px 0;
+
+  color: var(--muted);
+}
+
+.sharing-classification {
+  margin-top: 16px;
+  padding-top: 14px;
+
+  border-top: 1px dashed #cbbbad;
+
+  color: var(--ink);
+
+  font-family: monospace;
+  font-size: 0.88rem;
+}
+
+
+/* ---------- Behavioral Interpretation ---------- */
+
+.sharing-meaning {
+  margin-top: 24px;
+  padding: 24px;
+
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+.sharing-meaning-label {
+  margin-bottom: 12px;
+
+  color: var(--wine);
+
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.sharing-meaning p {
+  color: var(--muted);
+
+  line-height: 1.85;
+}
+
+.sharing-highlight {
+  margin-top: 14px;
+
+  color: var(--wine) !important;
+
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 600;
+}
+
+
+/* ---------- Response Preference ---------- */
+
+.sharing-response {
+  margin-top: 22px;
+  padding: 22px;
+
+  background: #f7f1e9;
+
+  border-radius: 14px;
+}
+
+.sharing-response-title {
+  margin-bottom: 10px;
+
+  color: var(--wine);
+
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.sharing-response p {
+  margin: 0;
+
+  color: var(--muted);
+
+  line-height: 1.8;
+}
+
+.sharing-response-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  margin-top: 16px;
+}
+
+.sharing-response-tags span {
+  padding: 6px 11px;
+
+  background: #eaded1;
+  color: var(--wine);
+
+  border-radius: 999px;
+
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+
+/* ---------- Core Message ---------- */
+
+.sharing-core {
+  margin-top: 26px;
+  padding: 28px 24px;
+
+  background: var(--black);
+  color: #f4eee6;
+
+  border-radius: 14px;
+
+  text-align: center;
+}
+
+.sharing-core p {
+  margin: 0;
+
+  color: #d9d0c8;
+}
+
+.sharing-core strong {
+  display: block;
+
+  margin-top: 5px;
+
+  color: #ffffff;
+
+  font-family: var(--serif);
+  font-size: 1.35rem;
+}
+
+.sharing-core .sharing-core-small {
+  margin-top: 14px;
+
+  color: #c9beb6;
+
+  font-size: 0.9rem;
+}
+
 @media (max-width: 600px) {
 
   .page {
@@ -1839,5 +2057,18 @@ button {
 
   .low-battery-core {
     padding: 26px 18px;
+  }
+     .sharing-stream,
+  .sharing-meaning,
+  .sharing-response {
+    padding: 18px;
+  }
+
+  .sharing-research-note {
+    padding: 18px;
+  }
+
+  .sharing-core {
+    padding: 24px 18px;
   }
 }
