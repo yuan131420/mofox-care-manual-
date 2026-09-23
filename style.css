@@ -4398,6 +4398,231 @@ button {
   line-height: 1.8;
 }
 
+/* ========================================
+   Recharge Protocol
+======================================== */
+
+.recharge-protocol {
+  margin-top: 42px;
+}
+
+.recharge-intro {
+  max-width: 720px;
+  margin-top: 16px;
+
+  color: var(--muted);
+  line-height: 1.85;
+}
+
+
+/* ---------- Recharge Cards ---------- */
+
+.recharge-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+
+  margin-top: 24px;
+}
+
+.recharge-card {
+  padding: 22px;
+
+  background: var(--cream-light);
+
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+.recharge-icon {
+  margin-bottom: 13px;
+
+  font-size: 1.5rem;
+}
+
+.recharge-card strong {
+  display: block;
+
+  color: var(--ink);
+
+  font-family: var(--serif);
+  font-size: 1.08rem;
+}
+
+.recharge-card p {
+  margin: 8px 0 0;
+
+  color: var(--muted);
+
+  font-size: 0.92rem;
+  line-height: 1.75;
+}
+
+
+/* ---------- Sleep Card ---------- */
+
+.sleep-card {
+  grid-column: 1 / -1;
+
+  background: #eee4d8;
+
+  border-color: #cdbdab;
+}
+
+
+/* ---------- Energy Monitor ---------- */
+
+.energy-monitor {
+  margin-top: 28px;
+  padding: 30px 26px;
+
+  background: var(--black);
+  color: #ffffff;
+
+  border-radius: 14px;
+}
+
+.energy-monitor-label {
+  margin-bottom: 22px;
+
+  color: #d8b982;
+
+  font-family: monospace;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.energy-row {
+  display: grid;
+  grid-template-columns: 120px 1fr 45px;
+  align-items: center;
+  gap: 14px;
+
+  margin-top: 14px;
+}
+
+.energy-row span {
+  color: #d8cec6;
+
+  font-family: monospace;
+  font-size: 0.84rem;
+}
+
+.energy-row strong {
+  color: #ffffff;
+
+  font-family: monospace;
+  font-size: 0.85rem;
+
+  text-align: right;
+}
+
+.energy-bar {
+  height: 8px;
+
+  overflow: hidden;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  border-radius: 999px;
+}
+
+.energy-fill {
+  height: 100%;
+
+  background: #d8b982;
+
+  border-radius: 999px;
+}
+
+.mental-energy {
+  width: 0%;
+}
+
+.soul-energy {
+  width: 100%;
+}
+
+
+/* ---------- Sleeping Status ---------- */
+
+.energy-status {
+  margin-top: 28px;
+  padding-top: 20px;
+
+  border-top: 1px dashed rgba(255, 255, 255, 0.18);
+
+  color: #d8b982;
+
+  font-family: monospace;
+  font-size: 0.9rem;
+
+  text-align: center;
+}
+
+.energy-warning {
+  margin-top: 7px;
+
+  color: #ffffff;
+
+  font-family: monospace;
+  font-weight: 700;
+
+  text-align: center;
+}
+
+.sleeping-fox {
+  margin-top: 18px;
+
+  font-size: 2.3rem;
+
+  text-align: center;
+}
+
+
+/* ---------- Recharge Note ---------- */
+
+.recharge-note {
+  margin-top: 22px;
+  padding: 24px;
+
+  background: #eee4d8;
+
+  border-left: 4px solid var(--wine);
+  border-radius: 0 12px 12px 0;
+}
+
+.recharge-note-label {
+  margin-bottom: 10px;
+
+  color: var(--wine);
+
+  font-family: monospace;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+}
+
+.recharge-note p {
+  margin: 0;
+
+  color: var(--muted);
+
+  line-height: 1.8;
+}
+
+.recharge-note strong {
+  display: block;
+
+  margin-top: 10px;
+
+  color: var(--ink);
+
+  font-family: var(--serif);
+  font-size: 1.08rem;
+}
+
 @media (max-width: 600px) {
 
   .page {
@@ -4803,5 +5028,33 @@ button {
 
   .gift-core {
     padding: 24px 8px;
+  }
+     .recharge-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sleep-card {
+    grid-column: auto;
+  }
+
+  .recharge-card {
+    padding: 19px 18px;
+  }
+
+  .energy-monitor {
+    padding: 26px 18px;
+  }
+
+  .energy-row {
+    grid-template-columns: 1fr 42px;
+    gap: 8px;
+  }
+
+  .energy-row span {
+    grid-column: 1 / -1;
+  }
+
+  .recharge-note {
+    padding: 20px 18px;
   }
 }
