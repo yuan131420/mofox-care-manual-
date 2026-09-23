@@ -198,3 +198,36 @@ resonanceButton.addEventListener("click", function () {
   resonanceButton.disabled = true;
 
 });
+/* ========================================
+   Feeding Experiment
+======================================== */
+
+const safeFoodButton = document.querySelector("#safe-food-button");
+const dangerFoodButton = document.querySelector("#danger-food-button");
+const feedingExperimentResult = document.querySelector("#feeding-experiment-result");
+
+
+safeFoodButton.addEventListener("click", function () {
+
+  feedingExperimentResult.innerHTML = `
+    <div class="feeding-success">
+      Feeding successful.<br>
+      <strong>🦊「可以，這個留下。」</strong>
+    </div>
+  `;
+
+});
+
+
+dangerFoodButton.addEventListener("click", function () {
+
+  feedingExperimentResult.innerHTML = `
+    <div class="feeding-failure">
+      ⚠️ Feeding failure.<br>
+      Spice tolerance exceeded.<br><br>
+      <strong>MoFox has left the server.</strong><br>
+      🦊💨
+    </div>
+  `;
+
+});
