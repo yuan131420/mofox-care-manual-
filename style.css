@@ -2519,6 +2519,218 @@ button {
   color: #d8b982;
 }
 
+
+/* ========================================
+   File 03 / Affection System
+======================================== */
+
+.affection-system {
+  background: #f4ede4;
+  color: var(--ink);
+}
+
+
+/* ---------- Affection Dashboard ---------- */
+
+.affection-dashboard {
+  padding: 34px;
+
+  background: var(--cream-light);
+
+  border: 1px solid var(--line);
+  border-radius: 18px;
+
+  box-shadow: 0 12px 40px rgba(39, 35, 33, 0.07);
+}
+
+.affection-dashboard-top {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.affection-dashboard h3 {
+  margin: 7px 0 0;
+
+  color: var(--ink);
+
+  font-family: var(--serif);
+  font-size: 1.6rem;
+}
+
+.affection-value {
+  flex-shrink: 0;
+
+  color: var(--wine);
+
+  font-family: var(--serif);
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.affection-max {
+  color: var(--muted);
+
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+
+/* ---------- Affection Meter ---------- */
+
+.affection-meter {
+  height: 14px;
+
+  margin-top: 26px;
+
+  overflow: hidden;
+
+  background: #e4d9ce;
+
+  border: 1px solid #d7c9bc;
+  border-radius: 999px;
+}
+
+.affection-meter-fill {
+  width: 0%;
+  height: 100%;
+
+  background: var(--wine);
+
+  border-radius: inherit;
+
+  transition: width 0.6s ease;
+}
+
+.affection-level {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 9px;
+
+  color: var(--muted);
+
+  font-size: 0.75rem;
+}
+
+.affection-status {
+  margin-top: 22px;
+  padding-top: 18px;
+
+  border-top: 1px dashed var(--line);
+
+  color: var(--wine);
+
+  font-family: monospace;
+  font-size: 0.85rem;
+}
+
+
+/* ---------- System Rule ---------- */
+
+.affection-rule {
+  display: flex;
+  gap: 18px;
+
+  margin-top: 24px;
+  padding: 26px;
+
+  background: var(--black);
+  color: #f4eee6;
+
+  border-radius: 16px;
+}
+
+.affection-rule-icon {
+  flex-shrink: 0;
+
+  font-size: 1.4rem;
+}
+
+.affection-rule-label {
+  margin-bottom: 7px;
+
+  color: #d8b982;
+
+  font-family: monospace;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+}
+
+.affection-rule h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family: var(--serif);
+  font-size: 1.35rem;
+}
+
+.affection-rule p {
+  margin: 12px 0 0;
+
+  color: #d2c8c0;
+
+  line-height: 1.85;
+}
+
+
+/* ---------- Context Dependency ---------- */
+
+.affection-context {
+  margin-top: 20px;
+  padding: 24px;
+
+  background: #eee3d7;
+
+  border: 1px solid #dacabd;
+  border-radius: 14px;
+
+  text-align: center;
+}
+
+.affection-context-label {
+  color: var(--wine);
+
+  font-family: monospace;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+}
+
+.affection-context p {
+  max-width: 650px;
+
+  margin: 12px auto 0;
+
+  color: var(--muted);
+
+  line-height: 1.8;
+}
+
+.affection-equation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  margin-top: 20px;
+
+  color: var(--ink);
+
+  font-family: var(--serif);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.affection-equation span {
+  color: var(--wine);
+
+  font-size: 1.15rem;
+}
+
 @media (max-width: 600px) {
 
   .page {
@@ -2711,5 +2923,30 @@ button {
   .field-summary-footer {
     gap: 12px;
     font-size: 0.78rem;
+  }
+     .affection-dashboard {
+    padding: 26px 22px;
+  }
+
+  .affection-dashboard-top {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .affection-value {
+    font-size: 1.9rem;
+  }
+
+  .affection-level {
+    font-size: 0.65rem;
+  }
+
+  .affection-rule {
+    padding: 22px 18px;
+  }
+
+  .affection-context {
+    padding: 20px 18px;
   }
 }
