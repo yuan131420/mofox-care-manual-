@@ -2961,6 +2961,150 @@ button {
   line-height: 1.8;
 }
 
+/* ========================================
+   Affection Event 02 / Small Positive Events
+======================================== */
+
+.positive-event {
+  background: #fffaf5;
+}
+
+
+/* ---------- Memory Fragments ---------- */
+
+.positive-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+
+  margin-top: 28px;
+}
+
+.positive-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+
+  padding: 20px;
+
+  background: #f7f0e7;
+
+  border: 1px solid var(--line);
+  border-radius: 13px;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.positive-item:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 22px rgba(39, 35, 33, 0.07);
+}
+
+.positive-icon {
+  flex-shrink: 0;
+
+  font-size: 1.3rem;
+}
+
+.positive-item strong {
+  color: var(--ink);
+
+  line-height: 1.6;
+}
+
+.positive-item p {
+  margin: 6px 0 0;
+
+  color: var(--muted);
+
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+
+/* ---------- Memory Saved ---------- */
+
+.positive-memory {
+  margin-top: 26px;
+  padding: 28px 24px;
+
+  background: var(--black);
+  color: #f4eee6;
+
+  border-radius: 14px;
+
+  text-align: center;
+}
+
+.positive-memory-status {
+  margin-bottom: 16px;
+
+  color: #d8b982;
+
+  font-family: monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+}
+
+.positive-memory p {
+  max-width: 600px;
+
+  margin: 0 auto;
+
+  color: #d5cbc3;
+
+  line-height: 1.85;
+}
+
+.positive-memory strong {
+  display: block;
+
+  margin-top: 16px;
+
+  color: #ffffff;
+
+  font-family: var(--serif);
+  font-size: 1.25rem;
+}
+
+
+/* ---------- Core ---------- */
+
+.positive-core {
+  margin-top: 26px;
+  padding: 26px 20px;
+
+  border-top: 1px dashed var(--line);
+  border-bottom: 1px dashed var(--line);
+
+  text-align: center;
+}
+
+.positive-core p {
+  margin: 0;
+
+  color: var(--muted);
+
+  line-height: 1.8;
+}
+
+.positive-core strong {
+  display: block;
+
+  max-width: 650px;
+
+  margin: 10px auto 0;
+
+  color: var(--wine);
+
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
 @media (max-width: 600px) {
 
   .page {
@@ -3204,6 +3348,21 @@ button {
   }
 
   .resonance-core {
+    padding: 22px 8px;
+  }
+     .positive-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .positive-item {
+    padding: 18px;
+  }
+
+  .positive-memory {
+    padding: 24px 18px;
+  }
+
+  .positive-core {
     padding: 22px 8px;
   }
 }
