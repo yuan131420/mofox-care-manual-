@@ -3846,6 +3846,239 @@ button {
   font-family: var(--serif);
   font-size: 1.08rem;
 }
+
+/* ========================================
+   Feeding Hazards
+======================================== */
+
+.feeding-hazards {
+  margin-top: 38px;
+}
+
+.hazard-intro {
+  max-width: 720px;
+  margin-top: 16px;
+
+  color: var(--muted);
+  line-height: 1.85;
+}
+
+
+/* ---------- Hazard Cards ---------- */
+
+.hazard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+
+  margin-top: 24px;
+}
+
+.hazard-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+
+  padding: 22px;
+
+  background: var(--cream-light);
+
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+.hazard-icon {
+  flex-shrink: 0;
+
+  font-size: 1.6rem;
+}
+
+.hazard-content {
+  min-width: 0;
+}
+
+.hazard-status {
+  display: inline-block;
+
+  margin-bottom: 9px;
+  padding: 4px 8px;
+
+  border-radius: 999px;
+
+  font-family: monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.hazard-card h4 {
+  margin: 0;
+
+  color: var(--ink);
+
+  font-family: var(--serif);
+  font-size: 1.15rem;
+}
+
+.hazard-card p {
+  margin: 8px 0 0;
+
+  color: var(--muted);
+
+  font-size: 0.92rem;
+  line-height: 1.75;
+}
+
+
+/* ---------- Rejected ---------- */
+
+.hazard-card.rejected {
+  background: #f3e4e1;
+  border-color: #cba9a5;
+}
+
+.hazard-card.rejected .hazard-status {
+  background: var(--wine);
+  color: #ffffff;
+}
+
+
+/* ---------- Conditional ---------- */
+
+.hazard-card.conditional {
+  background: #f4ecdf;
+  border-color: #d2c1a6;
+}
+
+.hazard-card.conditional .hazard-status {
+  background: #e5d6bd;
+  color: #6c5839;
+}
+
+
+/* ---------- Feeding Experiment ---------- */
+
+.feeding-experiment {
+  margin-top: 28px;
+  padding: 30px 24px;
+
+  background: var(--black);
+  color: #ffffff;
+
+  border-radius: 14px;
+
+  text-align: center;
+}
+
+.feeding-experiment-label {
+  color: #d8b982;
+
+  font-family: monospace;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.feeding-experiment p {
+  margin: 12px 0 0;
+
+  color: #d8cec6;
+  line-height: 1.8;
+}
+
+.feeding-experiment-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  margin-top: 20px;
+}
+
+.feeding-test-button {
+  padding: 10px 16px;
+
+  border: none;
+  border-radius: 999px;
+
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.feeding-test-button:hover {
+  transform: translateY(-2px);
+}
+
+.feeding-test-button.safe {
+  background: #eee4d8;
+  color: var(--ink);
+}
+
+.feeding-test-button.danger {
+  background: var(--wine);
+  color: #ffffff;
+}
+
+.feeding-experiment-result {
+  min-height: 26px;
+
+  margin-top: 18px;
+
+  color: #d8b982;
+
+  font-family: monospace;
+  line-height: 1.8;
+}
+
+
+/* ---------- Hazard Warning ---------- */
+
+.hazard-warning {
+  margin-top: 22px;
+  padding: 24px;
+
+  background: #eee4d8;
+
+  border-left: 4px solid var(--wine);
+  border-radius: 0 12px 12px 0;
+}
+
+.hazard-warning-label {
+  margin-bottom: 10px;
+
+  color: var(--wine);
+
+  font-family: monospace;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+}
+
+.hazard-warning p {
+  margin: 0;
+
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.hazard-warning strong {
+  display: block;
+
+  margin-top: 8px;
+
+  color: var(--ink);
+
+  font-family: var(--serif);
+  font-size: 1.08rem;
+}
+
 @media (max-width: 600px) {
 
   .page {
@@ -4184,5 +4417,28 @@ button {
 
   .food-detection {
     padding: 24px 18px;
+  }
+     .hazard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hazard-card {
+    padding: 19px 18px;
+  }
+
+  .feeding-experiment {
+    padding: 26px 18px;
+  }
+
+  .feeding-experiment-buttons {
+    flex-direction: column;
+  }
+
+  .feeding-test-button {
+    width: 100%;
+  }
+
+  .hazard-warning {
+    padding: 20px 18px;
   }
 }
