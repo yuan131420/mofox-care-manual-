@@ -147,3 +147,54 @@ chiliButton.addEventListener("click", function () {
   }
 
 });
+/* ========================================
+   Affection System
+======================================== */
+
+const affectionDisplay = document.querySelector("#affection-display");
+const affectionMeterFill = document.querySelector("#affection-meter-fill");
+
+function updateAffection(amount) {
+  affection += amount;
+
+  if (affection > 100) {
+    affection = 100;
+  }
+
+  if (affection < 0) {
+    affection = 0;
+  }
+
+  affectionDisplay.textContent = affection;
+  affectionMeterFill.style.width = affection + "%";
+}
+
+
+/* ========================================
+   Resonance Event
+======================================== */
+
+const resonanceButton = document.querySelector("#resonance-button");
+const resonanceResult = document.querySelector("#resonance-result");
+
+let resonanceTriggered = false;
+
+resonanceButton.addEventListener("click", function () {
+
+  if (resonanceTriggered) {
+    return;
+  }
+
+  resonanceTriggered = true;
+
+  updateAffection(20);
+
+  resonanceResult.innerHTML = `
+    ✦ Resonance confirmed.<br>
+    <strong>Affection +20</strong>
+  `;
+
+  resonanceButton.textContent = "✦ 共鳴已確認";
+  resonanceButton.disabled = true;
+
+});
