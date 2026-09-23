@@ -2731,6 +2731,236 @@ button {
   font-size: 1.15rem;
 }
 
+/* ========================================
+   Affection Event 01 / Resonance
+======================================== */
+
+.affection-event {
+  margin-top: 28px;
+  padding: 34px;
+
+  background: var(--cream-light);
+
+  border: 1px solid var(--line);
+  border-radius: 18px;
+
+  box-shadow: 0 12px 40px rgba(39, 35, 33, 0.06);
+}
+
+
+/* ---------- Header ---------- */
+
+.affection-event-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.affection-event-number {
+  display: inline-block;
+
+  margin-bottom: 18px;
+  padding: 6px 11px;
+
+  background: var(--wine);
+  color: #ffffff;
+
+  border-radius: 999px;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.affection-event-header h3 {
+  margin: 7px 0 0;
+
+  color: var(--ink);
+
+  font-family: var(--serif);
+  font-size: 2rem;
+}
+
+.affection-event-icon {
+  color: var(--gold);
+
+  font-size: 2.5rem;
+}
+
+
+/* ---------- Description ---------- */
+
+.affection-event-description {
+  max-width: 720px;
+
+  margin-top: 22px;
+
+  color: var(--muted);
+
+  line-height: 1.9;
+}
+
+
+/* ---------- Resonance Signals ---------- */
+
+.resonance-signals {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+
+  margin-top: 26px;
+}
+
+.resonance-signal {
+  padding: 14px 16px;
+
+  background: #f6efe6;
+
+  border: 1px solid var(--line);
+  border-radius: 11px;
+
+  color: var(--ink);
+}
+
+
+/* ---------- Important Note ---------- */
+
+.resonance-note {
+  margin-top: 22px;
+  padding: 22px;
+
+  background: #eee4d8;
+
+  border-left: 4px solid var(--wine);
+  border-radius: 0 12px 12px 0;
+}
+
+.resonance-note-label {
+  margin-bottom: 10px;
+
+  color: var(--wine);
+
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.resonance-note p {
+  margin: 6px 0;
+
+  color: var(--muted);
+
+  line-height: 1.8;
+}
+
+
+/* ---------- Interactive Demo ---------- */
+
+.resonance-demo {
+  margin-top: 26px;
+  padding: 30px 24px;
+
+  background: var(--black);
+  color: #f4eee6;
+
+  border-radius: 14px;
+
+  text-align: center;
+}
+
+.resonance-system-text {
+  color: #d8b982;
+
+  font-family: monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+}
+
+.resonance-fox {
+  margin-top: 18px;
+
+  color: #ffffff;
+
+  font-family: var(--serif);
+  font-size: 1.2rem;
+}
+
+.resonance-button {
+  margin-top: 22px;
+  padding: 11px 18px;
+
+  background: var(--wine);
+  color: #ffffff;
+
+  border: none;
+  border-radius: 999px;
+
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.resonance-button:hover {
+  transform: translateY(-2px);
+
+  background: var(--wine-dark);
+}
+
+.resonance-button:disabled {
+  cursor: default;
+  opacity: 0.6;
+  transform: none;
+}
+
+.resonance-result {
+  min-height: 24px;
+
+  margin-top: 18px;
+
+  color: #d8b982;
+
+  font-family: monospace;
+  font-size: 0.9rem;
+}
+
+
+/* ---------- Core Message ---------- */
+
+.resonance-core {
+  margin-top: 26px;
+  padding: 26px;
+
+  border-top: 1px dashed var(--line);
+  border-bottom: 1px dashed var(--line);
+
+  text-align: center;
+}
+
+.resonance-core p {
+  margin: 0;
+
+  color: var(--muted);
+}
+
+.resonance-core strong {
+  display: block;
+
+  margin-top: 7px;
+
+  color: var(--wine);
+
+  font-family: var(--serif);
+  font-size: 1.25rem;
+  line-height: 1.8;
+}
+
 @media (max-width: 600px) {
 
   .page {
@@ -2948,5 +3178,32 @@ button {
 
   .affection-context {
     padding: 20px 18px;
+  }
+     .affection-event {
+    padding: 26px 22px;
+  }
+
+  .affection-event-header {
+    gap: 14px;
+  }
+
+  .affection-event-icon {
+    font-size: 2rem;
+  }
+
+  .resonance-signals {
+    grid-template-columns: 1fr;
+  }
+
+  .resonance-note {
+    padding: 18px;
+  }
+
+  .resonance-demo {
+    padding: 26px 18px;
+  }
+
+  .resonance-core {
+    padding: 22px 8px;
   }
 }
