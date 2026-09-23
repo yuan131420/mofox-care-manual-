@@ -3269,6 +3269,197 @@ button {
   line-height: 1.8;
 }
 
+/* ========================================
+   Hard Boundaries
+======================================== */
+
+.hard-boundaries {
+  margin-top: 32px;
+  padding: 34px;
+
+  background: #f3ece4;
+
+  border: 1px solid #cdbfb2;
+  border-radius: 18px;
+
+  box-shadow: 0 12px 40px rgba(39, 35, 33, 0.06);
+}
+
+
+/* ---------- Header ---------- */
+
+.hard-boundaries-warning {
+  display: inline-block;
+
+  margin-bottom: 18px;
+  padding: 7px 12px;
+
+  background: var(--wine);
+  color: #ffffff;
+
+  border-radius: 999px;
+
+  font-family: monospace;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.hard-boundaries-header h3 {
+  margin: 8px 0 0;
+
+  color: var(--ink);
+
+  font-family: var(--serif);
+  font-size: 2rem;
+}
+
+.hard-boundaries-intro {
+  max-width: 720px;
+
+  margin: 18px 0 0;
+
+  color: var(--muted);
+
+  line-height: 1.9;
+}
+
+
+/* ---------- Boundary List ---------- */
+
+.boundary-list {
+  display: grid;
+  gap: 12px;
+
+  margin-top: 28px;
+}
+
+.boundary-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+
+  padding: 20px 22px;
+
+  background: #fffaf5;
+
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.boundary-number {
+  flex-shrink: 0;
+
+  color: var(--wine);
+
+  font-family: monospace;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.boundary-item strong {
+  color: var(--ink);
+
+  font-family: var(--serif);
+  font-size: 1.05rem;
+}
+
+.boundary-item p {
+  margin: 7px 0 0;
+
+  color: var(--muted);
+
+  font-size: 0.92rem;
+  line-height: 1.8;
+}
+
+
+/* ---------- Privacy Protocol ---------- */
+
+.boundary-privacy {
+  margin-top: 24px;
+  padding: 24px;
+
+  background: #e9ded3;
+
+  border-left: 4px solid var(--wine);
+  border-radius: 0 12px 12px 0;
+}
+
+.boundary-privacy-label {
+  margin-bottom: 10px;
+
+  color: var(--wine);
+
+  font-family: monospace;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+}
+
+.boundary-privacy p {
+  margin: 0;
+
+  color: var(--muted);
+
+  line-height: 1.8;
+}
+
+.boundary-privacy strong {
+  display: block;
+
+  margin-top: 10px;
+
+  color: var(--ink);
+
+  line-height: 1.8;
+}
+
+
+/* ---------- Critical Notice ---------- */
+
+.boundary-critical {
+  margin-top: 26px;
+  padding: 30px 24px;
+
+  background: var(--black);
+
+  border-radius: 14px;
+
+  text-align: center;
+}
+
+.boundary-critical-label {
+  color: #ffffff;
+
+  font-family: monospace;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+}
+
+.boundary-critical p {
+  max-width: 620px;
+
+  margin: 18px auto 0;
+
+  color: #d8cec6;
+
+  line-height: 1.85;
+}
+
+.boundary-critical strong {
+  display: block;
+
+  margin-top: 16px;
+
+  color: #ffffff;
+
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  line-height: 1.7;
+}
+
 @media (max-width: 600px) {
 
   .page {
@@ -3539,5 +3730,25 @@ button {
 
   .friction-context {
     padding: 20px 18px;
+  }
+     .hard-boundaries {
+    padding: 26px 22px;
+  }
+
+  .hard-boundaries-header h3 {
+    font-size: 1.7rem;
+  }
+
+  .boundary-item {
+    gap: 13px;
+    padding: 18px;
+  }
+
+  .boundary-privacy {
+    padding: 20px 18px;
+  }
+
+  .boundary-critical {
+    padding: 26px 18px;
   }
 }
