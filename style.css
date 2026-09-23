@@ -4079,6 +4079,137 @@ button {
   font-size: 1.08rem;
 }
 
+/* ========================================
+   Non-Food Feeding
+======================================== */
+
+.non-food-feeding {
+  margin-top: 42px;
+}
+
+.non-food-intro {
+  max-width: 720px;
+  margin-top: 16px;
+
+  color: var(--muted);
+  line-height: 1.85;
+}
+
+
+/* ---------- Alternative Energy Sources ---------- */
+
+.non-food-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+
+  margin-top: 24px;
+}
+
+.non-food-card {
+  position: relative;
+
+  padding: 24px;
+
+  background: var(--cream-light);
+
+  border: 1px solid var(--line);
+  border-radius: 14px;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.non-food-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 10px 26px rgba(39, 35, 33, 0.07);
+}
+
+.non-food-icon {
+  margin-bottom: 14px;
+
+  color: var(--gold);
+
+  font-size: 1.45rem;
+}
+
+.non-food-card strong {
+  display: block;
+
+  color: var(--ink);
+
+  font-family: var(--serif);
+  font-size: 1.08rem;
+}
+
+.non-food-card p {
+  margin: 9px 0 0;
+
+  color: var(--muted);
+
+  font-size: 0.92rem;
+  line-height: 1.75;
+}
+
+
+/* ---------- World Feeding ---------- */
+
+.world-feeding {
+  margin-top: 28px;
+  padding: 34px 26px;
+
+  background: var(--black);
+  color: #ffffff;
+
+  border-radius: 16px;
+
+  text-align: center;
+}
+
+.world-feeding-status {
+  color: #d8b982;
+
+  font-family: monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+}
+
+.world-feeding p {
+  max-width: 620px;
+
+  margin: 18px auto 0;
+
+  color: #d8cec6;
+
+  line-height: 1.85;
+}
+
+.world-feeding strong {
+  display: block;
+
+  margin-top: 12px;
+
+  color: #ffffff;
+
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  line-height: 1.7;
+}
+
+.world-feeding-fox {
+  margin-top: 24px;
+  padding-top: 18px;
+
+  border-top: 1px dashed rgba(255, 255, 255, 0.18);
+
+  color: #d8b982;
+
+  font-family: var(--serif);
+  font-size: 1.08rem;
+}
+
 @media (max-width: 600px) {
 
   .page {
@@ -4440,5 +4571,20 @@ button {
 
   .hazard-warning {
     padding: 20px 18px;
+  }
+     .non-food-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .non-food-card {
+    padding: 20px 18px;
+  }
+
+  .world-feeding {
+    padding: 28px 18px;
+  }
+
+  .world-feeding strong {
+    font-size: 1.25rem;
   }
 }
