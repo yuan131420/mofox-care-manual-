@@ -3666,6 +3666,151 @@
       </div>
 
     </section>
+
+  <!-- =========================
+       File 05 / Status System
+  ========================== -->
+  <section class="status-system page" id="file-05">
+    <div class="container">
+      <div class="file-header">
+        <div class="section-label">File 05 / Status System</div>
+        <h2>狀態系統</h2>
+        <p class="file-subtitle">Known behavioral states and observable condition changes of MoFox.</p>
+      </div>
+
+      <div class="status-monitor">
+        <div>
+          <div class="profile-label">Status Monitor</div>
+          <h3>今日份狐狸是哪一隻？</h3>
+        </div>
+        <div class="status-monitor-icon">🦊</div>
+      </div>
+
+      <div class="status-rule-card">
+        <p>狀態分類是為了協助理解，而不是替狐狸下定義。不同狀態可能同時存在，也沒有固定的出現順序。</p>
+        <div class="status-rule-warning">
+          <span>⚠️</span>
+          <div><strong>本系統無法取代直接溝通。</strong><p>如果不確定狐狸現在是哪一種狀態——可以直接問狐狸。</p></div>
+        </div>
+      </div>
+
+      <div class="status-grid">
+        <article class="status-card">
+          <div class="status-card-top"><span class="status-code">STATE 01</span><span class="status-emoji">🦊✨</span></div>
+          <div class="profile-label">Normal</div><h3>正常狐狸</h3>
+          <p>通常正在做自己真的想做的事：研究、寫東西、跑活動、規劃下一個專案，或突然對某件事產生新的興趣。</p>
+          <div class="status-terminal">Current Projects: ???<br><span>Researcher has given up counting.</span></div>
+        </article>
+
+        <article class="status-card">
+          <div class="status-card-top"><span class="status-code">STATE 02</span><span class="status-emoji">🪫🦊</span></div>
+          <div class="profile-label">Low Battery</div><h3>低電量狐狸</h3>
+          <p>回覆速度可能變慢、訊息堆積、話變少，也可能需要一段不被要求輸出的獨處時間。</p>
+          <div class="status-tags"><span>Reply speed ↓</span><span>Energy ↓</span><span>Alone time ↑</span></div>
+          <div class="status-note"><strong>No reply ≠ dislike</strong><p>可以傳訊息、可以關心，但不要要求她立刻解釋或恢復。如果狐狸已經睡著了——請讓她睡。</p></div>
+        </article>
+
+        <article class="status-card affectionate-status">
+          <div class="status-card-top"><span class="status-code">STATE 03</span><span class="status-emoji">🦊💗</span></div>
+          <div class="profile-label">Affectionate</div><h3>撒嬌狐狸</h3>
+          <p>俗稱：狐狸發情期。可能突然變得很黏、很會撒嬌、想抱抱摸摸頭，並出現大量靠近行為。</p>
+          <div class="status-terminal">Affection overflow.<br><strong>You have been foxed.</strong></div>
+          <button class="status-action" id="paw-button">🐾 把爪子伸出去</button>
+          <div class="status-action-response" id="paw-response"></div>
+        </article>
+
+        <article class="status-card annoyed-status">
+          <div class="status-card-top"><span class="status-code">STATE 04</span><span class="status-emoji">🦊💢</span></div>
+          <div class="profile-label">Annoyed</div><h3>炸毛狐狸</h3>
+          <p class="status-core-line">請先處理讓狐狸炸毛的事情，再處理炸毛的狐狸。</p>
+          <p>摸摸頭不是萬用橡皮擦。真正重要的是理解問題、承認影響，並一起確認下一次怎麼做。</p>
+          <ol class="severity-list"><li><span>01</span> Serious Mode</li><li><span>02</span> Debate Mode</li><li><span>03</span> Cold Mode</li><li><span>04</span> Disappear Mode</li></ol>
+          <div class="status-note"><strong>Apology ≠ Reset Button</strong><p>真正的修復，是讓墨狐看見：你理解自己做了什麼，也願意為造成的影響負責。</p></div>
+        </article>
+
+        <article class="status-card proud-status">
+          <div class="status-card-top"><span class="status-code">STATE 05</span><span class="status-emoji">🦊🏆</span></div>
+          <div class="profile-label">Proud</div><h3>驕傲狐狸</h3>
+          <p>會主動跑來炫耀成果、分享自己剛完成的事情，然後表面若無其事地等待稱讚。</p>
+          <div class="fox-status-quote">🦊「還好啦。」</div>
+          <div class="status-note"><strong>請勿受騙。</strong><p>尾巴已經翹到天花板了。她在等你繼續誇。</p></div>
+        </article>
+
+        <article class="status-card aggrieved-status">
+          <div class="status-card-top"><span class="status-code">STATE 06</span><span class="status-emoji">🦊☁️</span></div>
+          <div class="profile-label">Aggrieved</div><h3>委屈狐狸</h3>
+          <p>可能是默默受傷卻沒有被注意、等了很久沒有得到回應，或覺得自己的意思被誤解。</p>
+          <div class="fox-status-quote">🦊「我哪有怎樣。」<br><span>System detection: 有怎樣。</span></div>
+          <div class="status-tags"><span>(抱抱</span><span>(摸摸頭</span><span>(貼貼</span></div>
+        </article>
+      </div>
+
+      <div class="status-summary">
+        <div class="status-summary-head"><div><div class="profile-label">Field Summary</div><h3>狀態觀察結論</h3></div><span>File Complete ✓</span></div>
+        <div class="status-summary-list">
+          <div><span>01</span><p>同一隻狐狸，可以同時存在不只一種狀態。</p></div>
+          <div><span>02</span><p>安靜可能是沒電，也可能是受傷；不要只靠表面行為猜測。</p></div>
+          <div><span>03</span><p>撒嬌不是失去自主，炸毛也不代表關係必然結束。</p></div>
+          <div><span>04</span><p>比起辨識狀態，願意直接溝通通常更可靠。</p></div>
+          <div><span>05</span><p>狐狸狀態可能隨時更新，研究資料僅供當下參考。</p></div>
+        </div>
+        <div class="status-summary-footer"><span>Status System</span><strong>Completed ✓</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       Achievement Collection
+  ========================== -->
+  <section class="achievement-section page" id="achievements">
+    <div class="container">
+      <div class="file-header">
+        <div class="section-label">Research Archive / Achievement Collection</div>
+        <h2>成就圖鑑</h2>
+        <p class="file-subtitle">Fragments collected during your observation of the unidentified fox-shaped lifeform.</p>
+      </div>
+
+      <div class="achievement-progress-card">
+        <div><div class="profile-label">Collection Progress</div><strong><span id="achievement-count">0</span> / 9</strong></div>
+        <div class="achievement-progress-track"><div id="achievement-progress-fill"></div></div>
+      </div>
+
+      <div class="achievement-grid">
+        <article class="achievement-card" data-achievement="first-meet"><span class="achievement-lock">🔒</span><div class="achievement-icon">🦊</div><h3>初次見面</h3><p>Unknown lifeform detected.</p></article>
+        <article class="achievement-card" data-achievement="careful-reader"><span class="achievement-lock">🔒</span><div class="achievement-icon">📖</div><h3>有在認真看欸</h3><p>完成閱讀須知。</p></article>
+        <article class="achievement-card" data-achievement="fox-pet"><span class="achievement-lock">🔒</span><div class="achievement-icon">🫳</div><h3>狐狸摸摸</h3><p>勇敢地摸了狐狸。</p></article>
+        <article class="achievement-card" data-achievement="paw"><span class="achievement-lock">🔒</span><div class="achievement-icon">🐾</div><h3>把爪子伸出去</h3><p>狐狸伸爪時，你也伸出了爪子。</p></article>
+        <article class="achievement-card" data-achievement="annoying-hand"><span class="achievement-lock">🔒</span><div class="achievement-icon">👆</div><h3>手很賤是不是</h3><p>研究員已無力阻止你。</p></article>
+        <article class="achievement-card" data-achievement="chili-attempt"><span class="achievement-lock">🔒</span><div class="achievement-icon">🌶️</div><h3>辣椒謀殺未遂</h3><p>辣椒已被研究員沒收。</p></article>
+        <article class="achievement-card" data-achievement="resonance"><span class="achievement-lock">🔒</span><div class="achievement-icon">✦</div><h3>RESONANCE!</h3><p>「……你有看懂欸。」</p></article>
+        <article class="achievement-card" data-achievement="returning"><span class="achievement-lock">🔒</span><div class="achievement-icon">🏠</div><h3>狐狸洞常客</h3><p>你又回來了。</p></article>
+        <article class="achievement-card hidden-achievement" data-achievement="stay"><span class="achievement-lock">🔒</span><div class="achievement-icon">?</div><h3>???</h3><p>Hidden research record.</p></article>
+      </div>
+
+      <div class="achievement-note">
+        <div class="profile-label">Researcher Note</div>
+        <p>成就不是「攻略進度」。有人可能解鎖很多成就，卻不真正理解狐狸；也有人只做了一件事，就被墨狐記很久。</p>
+        <strong>被記住，和把數字刷滿，是兩件完全不同的事。</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       Ending
+  ========================== -->
+  <section class="ending-section page" id="ending">
+    <div class="container">
+      <div class="ending-card">
+        <div class="ending-terminal-label">Final Research Protocol</div>
+        <div class="ending-lines"><span>Research files loaded.</span><span>Observation complete.</span><span>Awaiting final confirmation...</span></div>
+        <button class="ending-button" id="ending-button">完成本次研究</button>
+        <div class="ending-result" id="ending-result" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="achievement-toast" id="achievement-toast" aria-live="polite"></div>
+
   <script src="script.js"></script>
 </body>
 
