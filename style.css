@@ -5270,3 +5270,99 @@ button {
     gap: 14px;
   }
 }
+/* ========================================
+   File 05 / Status System
+======================================== */
+.status-system { background: linear-gradient(180deg, #f3ede3 0%, var(--cream) 100%); }
+.status-monitor, .status-rule-card, .status-card, .status-summary, .achievement-progress-card, .achievement-card, .achievement-note { background: var(--cream-light); border: 1px solid var(--line); border-radius: 18px; }
+.status-monitor { display:flex; align-items:center; justify-content:space-between; gap:24px; padding:28px 30px; margin-bottom:18px; }
+.status-monitor h3 { margin:6px 0 0; font-size:1.7rem; }
+.status-monitor-icon { font-size:3rem; }
+.status-rule-card { padding:24px 26px; margin-bottom:22px; color:var(--muted); }
+.status-rule-warning { display:flex; gap:14px; margin-top:18px; padding:18px; background:#f1e8dc; border-radius:12px; color:var(--ink); }
+.status-rule-warning p { margin-top:4px; color:var(--muted); }
+.status-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:18px; }
+.status-card { padding:26px; box-shadow:0 10px 30px rgba(39,35,33,.04); }
+.status-card-top { display:flex; align-items:center; justify-content:space-between; margin-bottom:14px; }
+.status-code { font-family:monospace; color:var(--muted); font-size:.78rem; }
+.status-emoji { font-size:1.8rem; }
+.status-card h3 { margin:5px 0 12px; font-size:1.55rem; }
+.status-card > p { color:var(--muted); }
+.status-tags { display:flex; flex-wrap:wrap; gap:8px; margin-top:16px; }
+.status-tags span { padding:6px 10px; border:1px solid var(--line); border-radius:999px; color:var(--wine); font-size:.82rem; }
+.status-terminal { margin-top:18px; padding:15px 16px; background:var(--black); border-radius:10px; color:#fff; font-family:monospace; font-size:.86rem; }
+.status-terminal span { color:#bdb2aa; }
+.status-note { margin-top:18px; padding:16px 18px; background:#f4ede3; border-left:3px solid var(--wine); border-radius:0 10px 10px 0; }
+.status-note strong { color:var(--wine); }
+.status-note p { margin-top:5px; color:var(--muted); }
+.status-core-line { color:var(--wine)!important; font-family:var(--serif); font-weight:700; font-size:1.08rem; margin-bottom:8px; }
+.severity-list { list-style:none; padding:0; margin:18px 0 0; display:grid; gap:7px; }
+.severity-list li { display:flex; gap:10px; padding:8px 10px; background:#f8f3eb; border-radius:8px; }
+.severity-list span { color:var(--wine); font-family:monospace; }
+.fox-status-quote { margin-top:18px; padding:15px 17px; border:1px dashed #ccbdae; border-radius:12px; font-family:var(--serif); }
+.fox-status-quote span { color:var(--muted); font-family:monospace; font-size:.8rem; }
+.status-action { margin-top:18px; padding:10px 15px; border:1px solid var(--wine); border-radius:10px; background:transparent; color:var(--wine); cursor:pointer; }
+.status-action:hover { background:var(--wine); color:#fff; }
+.status-action:disabled { opacity:.65; cursor:default; }
+.status-action-response { min-height:26px; margin-top:10px; color:var(--wine); font-family:var(--serif); }
+.status-summary { margin-top:22px; padding:30px; }
+.status-summary-head { display:flex; justify-content:space-between; gap:20px; align-items:flex-start; }
+.status-summary-head h3 { margin:5px 0 0; font-size:1.7rem; }
+.status-summary-head > span { color:var(--wine); font-family:monospace; font-size:.8rem; }
+.status-summary-list { display:grid; gap:0; margin-top:20px; }
+.status-summary-list > div { display:grid; grid-template-columns:36px 1fr; gap:12px; padding:13px 0; border-top:1px solid var(--line); }
+.status-summary-list span { color:var(--wine); font-family:monospace; }
+.status-summary-list p { color:var(--muted); }
+.status-summary-footer { display:flex; justify-content:space-between; margin-top:18px; padding-top:18px; border-top:1px solid var(--line); color:var(--muted); }
+.status-summary-footer strong { color:var(--wine); }
+
+/* ========================================
+   Achievement Collection
+======================================== */
+.achievement-section { background:#efe7dc; }
+.achievement-progress-card { padding:24px 26px; margin-bottom:22px; }
+.achievement-progress-card > div:first-child { display:flex; align-items:flex-end; justify-content:space-between; gap:20px; }
+.achievement-progress-card strong { color:var(--wine); font-family:var(--serif); font-size:1.5rem; }
+.achievement-progress-track { height:8px; margin-top:14px; background:#ddd2c5; border-radius:999px; overflow:hidden; }
+#achievement-progress-fill { width:0; height:100%; background:var(--wine); border-radius:999px; transition:width .3s ease; }
+.achievement-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+.achievement-card { position:relative; min-height:190px; padding:24px 20px; text-align:center; opacity:.55; filter:grayscale(.65); transition:.2s ease; }
+.achievement-card.unlocked { opacity:1; filter:none; border-color:#c8ad98; box-shadow:0 8px 26px rgba(116,59,63,.08); }
+.achievement-lock { position:absolute; top:12px; right:14px; font-size:.8rem; }
+.achievement-card.unlocked .achievement-lock { display:none; }
+.achievement-icon { margin-top:10px; font-size:2.2rem; }
+.achievement-card h3 { margin:10px 0 5px; font-size:1.08rem; }
+.achievement-card p { color:var(--muted); font-size:.85rem; }
+.hidden-achievement:not(.unlocked) .achievement-icon { color:var(--muted); }
+.achievement-note { margin-top:22px; padding:24px 26px; }
+.achievement-note p { margin-top:10px; color:var(--muted); }
+.achievement-note strong { display:block; margin-top:8px; color:var(--wine); }
+.achievement-toast { position:fixed; right:22px; bottom:22px; z-index:100; max-width:330px; padding:14px 18px; border-radius:12px; background:var(--black); color:#fff; box-shadow:0 12px 35px rgba(0,0,0,.2); opacity:0; transform:translateY(12px); pointer-events:none; transition:.25s ease; }
+.achievement-toast.show { opacity:1; transform:translateY(0); }
+
+/* ========================================
+   Ending
+======================================== */
+.ending-section { min-height:100vh; display:flex; align-items:center; background:radial-gradient(circle at top,#3a3230 0%,var(--black) 50%,#191716 100%); color:#f4eee6; }
+.ending-card { max-width:760px; margin:0 auto; padding:42px; border:1px solid rgba(255,255,255,.14); border-radius:20px; background:rgba(255,255,255,.035); }
+.ending-terminal-label { color:#b9ada4; font-family:monospace; font-size:.8rem; letter-spacing:.12em; }
+.ending-lines { display:grid; gap:7px; margin-top:24px; color:#c9c0b9; font-family:monospace; }
+.ending-button { margin-top:28px; padding:12px 18px; border:1px solid rgba(255,255,255,.25); border-radius:10px; background:var(--wine); color:#fff; cursor:pointer; }
+.ending-button:hover { background:var(--wine-dark); }
+.ending-button:disabled { opacity:.65; cursor:default; }
+.ending-result { margin-top:30px; }
+.ending-result .ending-status { color:#b9ada4; font-family:monospace; line-height:1.9; }
+.ending-result .ending-fail { margin-top:12px; color:#fff; font-family:var(--serif); font-size:clamp(2rem,6vw,3.4rem); line-height:1.2; }
+.ending-result .ending-stay { margin-top:14px; color:#e6d5c8; font-family:var(--serif); font-size:clamp(1.3rem,4vw,2rem); }
+.ending-result .ending-reflection { margin-top:30px; padding-top:24px; border-top:1px solid rgba(255,255,255,.14); color:#d5cbc3; line-height:1.9; }
+.ending-result .ending-reflection strong { color:#fff; }
+.ending-result .ending-fox { margin-top:22px; font-size:2.5rem; }
+
+@media (max-width: 720px) {
+  .status-grid, .achievement-grid { grid-template-columns:1fr; }
+  .status-monitor, .status-summary, .ending-card { padding:24px 20px; }
+  .status-summary-head { flex-direction:column; }
+  .achievement-grid { gap:12px; }
+  .achievement-card { min-height:auto; }
+  .achievement-toast { left:16px; right:16px; bottom:16px; max-width:none; }
+}
