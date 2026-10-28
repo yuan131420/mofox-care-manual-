@@ -65,7 +65,7 @@ petFoxButton.addEventListener("click", function () {
 
 });
 /* ========================================
-   Reading Guide Navigation
+  Reading Guide Navigation
 ======================================== */
 
 const startReadingButton = document.querySelector("#start-reading");
@@ -77,8 +77,11 @@ startReadingButton.addEventListener("click", function () {
     behavior: "smooth"
   });
 
-   /* ========================================
-   Reading Guide → File 01
+});
+
+
+/* ========================================
+  Reading Guide → File 01
 ======================================== */
 
 const guideConfirmButton = document.querySelector("#guide-confirm");
@@ -99,9 +102,10 @@ guideConfirmButton.addEventListener("click", function () {
   }, 500);
 
 });
-});
+
+
 /* ========================================
-   Chili Experiment
+  Chili Experiment
 ======================================== */
 
 const chiliButton = document.querySelector("#chili-button");
