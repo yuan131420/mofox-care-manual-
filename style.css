@@ -5366,3 +5366,23 @@ button {
   .achievement-card { min-height:auto; }
   .achievement-toast { left:16px; right:16px; bottom:16px; max-width:none; }
 }
+
+
+/* ========================================
+   PDF review fixes / 2026-10-29
+======================================== */
+.species-description {
+  text-align: center;
+}
+.species-description p {
+  margin-left: auto;
+  margin-right: auto;
+}
+.keep-together {
+  white-space: nowrap;
+}
+@media (max-width: 720px) {
+  .keep-together {
+    white-space: normal;
+  }
+}
